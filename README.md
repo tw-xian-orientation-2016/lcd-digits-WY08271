@@ -16,3 +16,8 @@ Example: 910
 |_| ..| |.|
 ..| ..| |_|
 ```
+
+* splitInput()       3min
+* replace()          4min
+* loadNumberShapes() 8min
+* print()            22min
