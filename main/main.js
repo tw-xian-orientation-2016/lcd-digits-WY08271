@@ -20,11 +20,18 @@ function print(shapeArrays) {
     var shapeString = '';
 
     for (var i = 0; i < 3; i++) {
-        for (var k = 0; k < shapeArrays.length; k++) {
-            shapeString += shapeArrays[k][i] + ' ';
-        }
-        shapeString += '\n';
+        shapeString += joinShapeArrays(shapeArrays, i) + '\n';
     }
+
+    return shapeString;
+}
+
+function joinShapeArrays(shapeArrays, i) {
+    var shapeString = '';
+
+    shapeArrays.forEach(function (shapeArray) {
+        shapeString += shapeArray[i] + ' ';
+    });
 
     return shapeString;
 }
