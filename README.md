@@ -21,3 +21,4 @@ Example: 910
 * replace()          4min
 * loadNumberShapes() 8min
 * print()            22min
+* totalTime          37min
