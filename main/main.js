@@ -28,3 +28,11 @@ function print(shapeArrays) {
 
     return shapeString;
 }
+
+function lcdPrint(input) {
+    var numberArrays = splitInput(input);
+    var shapeArrays = replace(numberArrays);
+    var shapeString = print(shapeArrays);
+
+    console.log(shapeString);
+}
