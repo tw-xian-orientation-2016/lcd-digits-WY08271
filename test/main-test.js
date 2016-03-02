@@ -12,3 +12,12 @@ describe('replace()', function () {
         expect(replace(numberArrays)).toEqual(shapeArrays);
     });
 });
+
+describe('print()', function () {
+    it('can print shapeArrays', function () {
+        var shapeArrays = [['...', '..|', '..|'], ['._.', '._|', '|_.']];
+        var shapeString = "... ._. \n" + "..| ._| \n" + "..| |_. \n";
+
+        expect(print(shapeArrays)).toEqual(shapeString);
+    });
+});
